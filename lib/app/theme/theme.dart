@@ -32,6 +32,12 @@ final themeData = ThemeData(
       size: 24,
     ),
   ),
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
+    backgroundColor: Colors.white,
+    shape: StadiumBorder(),
+    iconSize: 32,
+    elevation: 4, // Adjust this value to soften the shadow
+  ),
   navigationBarTheme: NavigationBarThemeData(
     backgroundColor: _lightGrey,
     indicatorColor: _indicatorColor, 

@@ -17,7 +17,8 @@ This document outlines the features, design, and development plan for the Flutte
 *   **Search Bar Positioning:** The search bar has been moved down by increasing its top padding for better visual balance.
 *   **Disabled Home Screen Scrolling:** The Home screen no longer scrolls when there is no content, improving the user experience.
 *   **Consistent Scrolling:** The scrolling behavior is now consistent across the Home and Store screens, both using Flutter's default scroll physics.
+*   **Floating Action Button Refinements:** The floating action button has been updated with a softer shadow, a circular shape, and an adjusted icon size for a more polished look.
 
 ## Current Plan
 
-*   **Commit and Push Changes:** The latest UI refinements, including the consistent scrolling behavior, will be committed to the repository and pushed to the `main` branch to ensure all changes are saved and up-to-date.
+*   **Commit and Push Changes:** The latest UI refinements, including the floating action button adjustments, will be committed to the repository and pushed to the `main` branch to ensure all changes are saved and up-to-date.
