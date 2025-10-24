@@ -85,6 +85,7 @@ class MainScreen extends StatelessWidget {
               )
             : null,
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButtonAnimator: FloatingActionButtonAnimator.noAnimation,
         bottomNavigationBar: Container(
           padding: const EdgeInsets.symmetric(horizontal: 40.0),
           child: NavigationBar(
