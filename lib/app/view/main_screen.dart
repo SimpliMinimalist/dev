@@ -71,13 +71,16 @@ class MainScreen extends StatelessWidget {
         ),
         body: navigationShell,
         floatingActionButton: navigationShell.currentIndex == 1
-            ? FloatingActionButton.extended(
-                onPressed: () {
-                  context.push('/add_product');
-                },
-                label: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20.0),
-                  child: Icon(Icons.add, size: 30),
+            ? Transform.translate(
+                offset: const Offset(0, -10),
+                child: FloatingActionButton.extended(
+                  onPressed: () {
+                    context.push('/add_product');
+                  },
+                  label: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    child: Icon(Icons.add, size: 30),
+                  ),
                 ),
               )
             : null,
