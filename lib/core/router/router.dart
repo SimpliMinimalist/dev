@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:myapp/app/app.dart';
-import 'package:myapp/features/home/view/home_screen.dart';
-import 'package:myapp/features/profile/view/profile_screen.dart';
-import 'package:myapp/features/store/view/add_product_screen.dart';
-import 'package:myapp/features/store/view/store_screen.dart';
+import 'package:myapp/features/home/presentation/view/home_screen.dart';
+import 'package:myapp/features/profile/presentation/view/profile_screen.dart';
+import 'package:myapp/features/store/presentation/view/add_product_screen.dart';
+import 'package:myapp/features/store/presentation/view/store_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 

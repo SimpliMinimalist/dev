@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:myapp/features/store/model/product_model.dart';
-import 'package:myapp/features/store/viewModel/product_view_model.dart';
+import 'package:myapp/features/store/presentation/model/product_model.dart';
+import 'package:myapp/features/store/presentation/viewModel/product_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

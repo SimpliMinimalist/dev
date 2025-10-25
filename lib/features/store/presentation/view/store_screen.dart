@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/app/widgets/search_bar.dart';
 import 'dart:io';
-import 'package:myapp/features/store/viewModel/product_view_model.dart';
+import 'package:myapp/features/store/presentation/viewModel/product_view_model.dart';
 import 'package:provider/provider.dart';
 
 class StoreScreen extends StatelessWidget {
