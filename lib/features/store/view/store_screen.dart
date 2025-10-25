@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/app/widgets/search_bar.dart';
 import 'dart:io';
-import 'package:myapp/features/store/provider/product_provider.dart';
+import 'package:myapp/features/store/viewModel/product_view_model.dart';
 import 'package:provider/provider.dart';
 
 class StoreScreen extends StatelessWidget {
@@ -9,7 +9,7 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final productProvider = Provider.of<ProductProvider>(context);
+    final productViewModel = Provider.of<ProductViewModel>(context);
 
     return Scaffold(
       body: CustomScrollView(
@@ -22,7 +22,7 @@ class StoreScreen extends StatelessWidget {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
-                final product = productProvider.products[index];
+                final product = productViewModel.products[index];
                 return Container(
                   margin: const EdgeInsets.symmetric(vertical: 4.0),
                   padding: const EdgeInsets.all(12.0),
@@ -99,7 +99,7 @@ class StoreScreen extends StatelessWidget {
                   ),
                 );
               },
-              childCount: productProvider.products.length,
+              childCount: productViewModel.products.length,
             ),
           ),
         ],

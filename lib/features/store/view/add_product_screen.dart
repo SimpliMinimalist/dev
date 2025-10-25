@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:myapp/features/store/model/product_model.dart';
-import 'package:myapp/features/store/provider/product_provider.dart';
+import 'package:myapp/features/store/viewModel/product_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -152,7 +152,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
             : null,
         imagePaths: imagePaths,
       );
-      Provider.of<ProductProvider>(
+      Provider.of<ProductViewModel>(
         context,
         listen: false,
       ).addProduct(newProduct);
